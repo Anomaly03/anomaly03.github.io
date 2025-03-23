@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.cell-panel-top {
+  position: fixed;
+  background-color: rgb(42, 42, 42);
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  z-index: 1000;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-top: 8px;
+  margin-right: 60px;
+}
+.nav-links a {
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+  border: 1px solid white;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1px 12px;
+}
+
+.cell-panel-2 {
+  position: relative;
+  background-color: rgb(237, 235, 235);
+  border-bottom: 1px solid rgb(190, 190, 190);
+  width: 100%;
+  height: 150px;
+  top: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brandLogo {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  top: 20px;
+  left: 20px;
+}
+
+.adidasLogo {
+  position: absolute;
+  left: 350px;
+  top: 20px;
+  height: 90px;
+  width: auto;
+  max-width: 100%;
+}
+
+.newBalanceLogo {
+  position: absolute;
+  left: 500px;
+  top: 20px;
+  height: 90px;
+  max-width: 100%;
+}
+.reebokLogo {
+  position: absolute;
+  left: 680px;
+  top: 20px;
+  height: 90px;
+  width: auto;
+  max-width: 100%;
+}
+.nikeLogo {
+  position: absolute;
+  left: 870px;
+  top: 20px;
+  height: 90px;
+  width: auto;
+  max-width: 100%;
+}
+.championLogo {
+  position: absolute;
+  left: 1060px;
+  top: 20px;
+  height: 90px;
+  width: auto;
+  max-width: 100%;
+}
+.FreeShipping-text {
+  position: relative;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-decoration: none;
+  top: 60px;
+}
+.container-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Menyamakan posisi kiri */
+  width: 80%; /* Agar mengikuti lebar gambar */
+  margin: auto;
+}
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+.slide-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.slide-content img {
+  width: auto; /* agar lebar mengikuti tinggi */
+  max-width: 100%; /* Tidak melebihi parent dlm hal ini slide-content */
+  height: auto; /* Menyesuaikan tinggi agar proporsi tetap */
+  max-height: 700px;
+}
+
+/* Login.html */
+.signIn-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 450px;
+  /* background-color: black; */
+  top: 120px;
+  margin: 0 auto;
+  /* border: blue solid; */
+}
+.text-sign {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  color: black;
+  /* border: blue solid; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+.dont-have-acc {
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  display: flex;
+  color: black;
+  /* border: blue solid; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  text-decoration-line: underline;
+}
+.email-password-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  top: 0px;
+  /* background-color: brown; */
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  /* border: red solid; */
+}
+.email-password-container input {
+  background-color: white;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 5px;
+}
+.forgot-pass-text {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  right: 0px;
+  right: 0px;
+  font-size: 14px;
+  color: black;
+  /* border: white solid; */
+}
+
+.submit {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  top: 40px;
+  border-radius: 30px;
+  /* border: red solid; */
+  color: white;
+  background-color: rgb(52, 37, 211);
+  cursor: pointer;
+}
