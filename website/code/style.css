@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container-right img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-left {
+  position: relative;
+  /* right: 0; */
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-shoes-station {
+  position: relative;
+  /* background-color: red; */
+  width: 430px;
+  height: 45.91px;
+  top: -152px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.shoes-station-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+.container-welcome {
+  /* background-color: yellow; */
+  position: relative;
+  width: 604px;
+  height: 84.83px;
+  display: flex;
+  top: -135px;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: medium;
+  font-size: 65px;
+  display: flex;
+  align-items: center;
+}
+.email-input {
+  padding-left: 70px;
+  width: 680px;
+  height: 87.83px;
+  top: -100px;
+  display: flex;
+  position: relative;
+  border-radius: 50px;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid rgb(147, 147, 147);
+}
+.password-input {
+  padding-left: 70px;
+  width: 680px;
+  height: 87.83px;
+  top: -90px;
+  display: flex;
+  position: relative;
+  border-radius: 50px;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid rgb(147, 147, 147);
+}
+.checkbox-container {
+  font-size: 20px;
+  top: -70px;
+  width: max-content;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.checkbox-input {
+  display: none;
+}
+.checkbox-label {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #939393;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.checkbox-input:checked + .checkbox-label {
+  background-color: black;
+  border: 1px solid #939393;
+}
+.Log-in-button {
+  width: 750px;
+  height: 57.89px;
+  top: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50px;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: black;
+  border: 1px solid rgb(147, 147, 147);
+  cursor: pointer;
+}
+.dont-have-acc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+.line-container {
+  position: relative;
+  top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Jarak antara garis dan teks */
+}
+
+.line {
+  flex: 1; /* Membuat garis fleksibel */
+  height: 1px;
+  width: 340px;
+  background-color: gray;
+}
+
+.text {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+}
+
+.login-google {
+  width: 750px;
+  height: 57.89px;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 50px;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(147, 147, 147);
+  cursor: pointer;
+}
+
+.google-icon {
+  width: 30px; /* Sesuaikan ukuran */
+  height: 30px;
+}
+
+/* HALAMAN 2*/
+.dashboard-top-panel-wrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  /* background-color: red; */
+  position: relative;
+  justify-content: center;
+  border-bottom: 1px solid rgb(147, 147, 147);
+}
+.dashboard-top-panel {
+  position: relative;
+  width: 100%;
+  height: 54px;
+  display: flex;
+  background-color: rgb(38, 38, 38);
+  justify-content: center;
+}
+
+.logo-container {
+  position: absolute;
+  top: 70px;
+  left: 80px;
+  width: 200px;
+  height: 106px;
+  display: flex;
+  background-color: honeydew;
+  justify-content: center;
+  align-items: center;
+}
+.logo-image {
+  width: 150px; /* Atur ukuran tetap */
+  height: auto; /* Jaga proporsi gambar */
+  max-width: 100%; /* Hindari gambar membesar lebih dari induknya */
+}
+.navlinks-wrapper {
+  width: 1200px;
+  height: 30px;
+  left: 350px;
+  top: 150px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  gap: 50px;
+}
+.navlinks-wrapper a {
+  font-family: "Monteserrat", sans-serif;
+  font-size: 20px;
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: black;
+  font-weight: bold;
+  padding: 5px 50px; /* Beri padding agar lebih rapi */
+}
+.shop-content {
+  position: relative;
+  /* background-color: blue; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.row-shopping1 {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  height: 200px;
+  top: 90px;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  text-decoration: none;
+  gap: 50px;
+}
+.container-content1,
+.container-content2,
+.container-content3,
+.container-content4,
+.container-content5 {
+  display: flex;
+  /* background-color: blue; */
+  width: 304px;
+  height: 150px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.container-content1 img,
+.container-content2 img,
+.container-content3 img,
+.container-content4 img,
+.container-content5 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.row1-texting1,
+.row1-texting2,
+.row1-texting3,
+.row1-texting4,
+.row-texting5 {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: medium;
+  color: black;
+  text-align: left;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.row-shopping1 a,
+.row-shopping2 a,
+.row-shopping3 a {
+  text-decoration: none;
+}
+
+.row-shopping2 {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  height: 200px;
+  top: 360px;
+  /* background-color: yellow; */
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  text-decoration: none;
+  gap: 50px;
+}
+.r2container-content1,
+.r2container-content2,
+.r2container-content3,
+.r2container-content4,
+.r2container-content5 {
+  display: flex;
+  background-color: blue;
+  width: 304px;
+  height: 150px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.r2container-content1 img,
+.r2container-content2 img,
+.r2container-content3 img,
+.r2container-content4 img,
+.r2container-content5 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.row2-texting1,
+.row2-texting2,
+.row2-texting3,
+.row2-texting4,
+.row2-texting5 {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: medium;
+  color: black;
+  text-align: left;
+  align-self: flex-start;
+  width: 100%;
+}
+.row-shopping3 {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  height: 200px;
+  top: 630px;
+  /* background-color: purple; */
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  text-decoration: none;
+  gap: 50px;
+}
+.r3container-content1,
+.r3container-content2,
+.r3container-content3,
+.r3container-content4,
+.r3container-content5 {
+  display: flex;
+  /* background-color: purple; */
+  width: 304px;
+  height: 150px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.r3container-content1 img,
+.r3container-content2 img,
+.r3container-content3 img,
+.r3container-content4 img,
+.r3container-content5 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.row3-texting1,
+.row3-texting2,
+.row3-texting3,
+.row3-texting4,
+.row3-texting5 {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: medium;
+  color: black;
+  text-align: left;
+  align-self: flex-start;
+  width: 100%;
+}
